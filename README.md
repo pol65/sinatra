@@ -1,4 +1,5 @@
-##Projet Sinatra
+Projet Sinatra
+======
 
 Mini web app created by **Paul Poitrenaud** (@polo on Slack) w/ Sinatra & Ruby.
 
@@ -6,7 +7,7 @@ Mini web app created by **Paul Poitrenaud** (@polo on Slack) w/ Sinatra & Ruby.
 1. Clone the repo
 2. `$ bundle install`
 3. `$ shotgun -p 4567`
-4. [CLICK HERE TO ENJOY] (http://localhost:4567/) alternatively, you can copy and paste http://localhost:4567/ in your favorite browser 
+4. Click the following link http://localhost:4567/) alternatively, you can copy and paste it in your favorite browser.
 
 **A state of the art webapp**
 Look at all the things you can do :
