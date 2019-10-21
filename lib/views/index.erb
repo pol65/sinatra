@@ -3,13 +3,16 @@
     <title>The Gossip Project</title>
   </head>
   <body>
-    <h1>Mon super site de gossip, depuis le dossier views</h1>
-    <h2> La liste des potins arrive bientôt ;)</h2>
-    <p> En attendant, propose ton gossip : <a href="/gossips/new/">Créer un nouveau gossip</a></p>
-    <% gossips.each do |gossip| %>
+    <h1>Mon super site de gossip</h1>
+    <h2> Il est moche mais soyez indulgents</h2><br/>
+    <h2>Propose ton gossip : <a href="/gossips/new/">Créer un nouveau gossip</a></h2><br/>
+    <h3>La liste des potins :</h3>
+    <% gossips.each_with_index do |gossip, id| %>
         <p>
           <%= gossip.author %><br/>
-          <%= gossip.content %>
+          <%= gossip.content %><br/>
+          <a href="/gossips/<%= id %>/"> Lien vers le potin  </a>
+          <p>**********</p>
         </p>
       <% end %>
   </body>

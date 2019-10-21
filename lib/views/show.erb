@@ -1,0 +1,13 @@
+<html>
+  <head>
+    <title>Gossip</title>
+  </head>
+   <section>
+      <p>Voici le numéro du gossip :</p>
+      <p> <%= @id %></p>
+      <p>Voici l'auteur du gossip :</p>
+      <p> <%= Gossip.find(@id)[0] %></p>
+      <p> Voici le contenu du gossip :</p>
+      <p> <%= Gossip.find(@id)[1] %></p>
+  </section>
+</html>

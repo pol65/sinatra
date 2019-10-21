@@ -1,6 +1,8 @@
 require "gossip"
 
 class ApplicationController < Sinatra::Base
+  attr_accessor :id
+
   get "/" do
     erb :index, locals: { gossips: Gossip.all }
   end
@@ -12,5 +14,10 @@ class ApplicationController < Sinatra::Base
   post "/gossips/new/" do
     Gossip.new(params["gossip_author"], params["gossip_content"]).save
     redirect "/"
+  end
+
+  get "/gossips/:id/" do
+    @id = params[:id]
+    erb :show
   end
 end
